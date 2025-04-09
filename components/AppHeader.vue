@@ -20,9 +20,9 @@
       </nav>
 
       <div @click="toggleMenu" class="md:hidden cursor-pointer transition-all ease-in-out">
-        <div class="w-4 h-0.5 bg-[#4a6b7d] mb-2"></div>
-        <div class="w-4 h-0.5 bg-[#4a6b7d] mb-2"></div>
-        <div class="w-4 h-0.5 bg-[#4a6b7d]"></div>
+        <div class="w-5 h-0.5 bg-[#4a6b7d] mb-1"></div>
+        <div class="w-5 h-0.5 bg-[#4a6b7d] mb-1"></div>
+        <div class="w-5 h-0.5 bg-[#4a6b7d]"></div>
       </div>
     </div>
 
@@ -36,7 +36,8 @@
       >
         &times; 
       </button>
-      <nav class="flex flex-col items-center gap-6">
+      <nav class="flex flex-col items-center text-center gap-6">
+        <h3 class="text-3xl text-white mb-5">Десница добра</h3>
         <NuxtLink
           v-for="link in store.navLinks"
           :key="link.id"

@@ -24,7 +24,7 @@ const props = defineProps<{
 }>()
 
 const mapSrc = computed(() => {
-  const defaultZoom = props.zoom ?? 13
+  const defaultZoom = props.zoom ?? 11
   const center = props.coordsList[0]
   const ll = `${center.lng},${center.lat}`
   const z = defaultZoom

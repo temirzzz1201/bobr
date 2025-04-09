@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: [
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
@@ -20,23 +20,8 @@ export default defineNuxtConfig({
       "~/components",
     ],
   },
-  head: {
-    script: [
-      {
-        hid: 'json-ld',
-        type: 'application/ld+json',
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "ДЕСНИЦА ДОБРА",
-          "url": "https://рабочий-дом.москва",
-          "logo": "https://example.com/logo.png",
-          "sameAs": [
-            "https://www.facebook.com/yourpage",
-            "https://twitter.com/yourpage"
-          ]
-        })
-      }
-    ]
-  }
+  ssr: false, 
+  nitro: {
+    preset: 'static',
+  },
 });

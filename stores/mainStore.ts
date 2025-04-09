@@ -38,9 +38,9 @@ export const useGeneralStore = defineStore("general", {
       { id: 3, icon: 'icon-whatsapp', name: 'WhatsApp', href: '#', src: 'whatsapp.svg' },
     ],
     addresses: [
-      { lat: 55.751244, lng: 37.618423 }, // Москва
-      { lat: 55.760186, lng: 37.618711 }, // ещё одна точка рядом
-      { lat: 55.758472, lng: 37.601088 }, // Третья
+      { lat: 55.751244, lng: 37.618423 }, 
+      { lat: 55.760186, lng: 37.618711 }, 
+      { lat: 55.758472, lng: 37.601088 }, 
     ]
   }),
 });
