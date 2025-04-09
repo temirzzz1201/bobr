@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-[#e6f0f3] shadow-md mt-12 py-8 text-[#4a6b7d]">
     <div
-      class="max-w-7xl mx-auto grid gap-10 md:grid-cols-3 grid-cols-1 px-4"
+      class="container mx-auto grid gap-10 md:grid-cols-3 grid-cols-1 px-4"
     >
       <div class="flex flex-col items-center md:items-start text-center md:text-left">
         <h3 class="text-lg font-semibold mb-4 relative inline-block after:block after:w-full after:h-0.5 after:bg-[#a8c4d0] after:mt-1">

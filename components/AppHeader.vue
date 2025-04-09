@@ -1,6 +1,6 @@
 <template>
   <header class="bg-[#e6f0f3] shadow-md py-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
       <div>
         <NuxtLink to="/">
           <img class="w-26 h-14" src="/logo.png" alt="Десница добра" />
@@ -19,20 +19,20 @@
         <p class="text-[#4a6b7d] hover:text-[#2c3e50] transition-all duration-300">Телефон <a href="tel:+7 999 00 00 0">+ 7 (999) 000 00 01</a></p>
       </nav>
 
-      <div @click="toggleMenu" class="md:hidden">
-        <div class="w-6 h-1 bg-[#4a6b7d] mb-2"></div>
-        <div class="w-6 h-1 bg-[#4a6b7d] mb-2"></div>
-        <div class="w-6 h-1 bg-[#4a6b7d]"></div>
+      <div @click="toggleMenu" class="md:hidden cursor-pointer transition-all ease-in-out">
+        <div class="w-4 h-0.5 bg-[#4a6b7d] mb-2"></div>
+        <div class="w-4 h-0.5 bg-[#4a6b7d] mb-2"></div>
+        <div class="w-4 h-0.5 bg-[#4a6b7d]"></div>
       </div>
     </div>
 
     <div
       v-if="isMenuOpen"
-      class="md:hidden absolute top-0 left-0 w-full bg-[#e6f0f3] pt-16 px-4 pb-4 transition-all transform ease-in-out duration-300"
+      class="md:hidden fixed z-20 top-0 left-0 bottom-0 w-full bg-[#15a0ca] pt-16 px-4 pb-4 transition-all transform ease-in-out duration-300"
     >
       <button
         @click="toggleMenu"
-        class="absolute top-4 right-4 text-[#4a6b7d] text-2xl"
+        class="absolute top-4 right-4 text-white text-4xl"
       >
         &times; 
       </button>
@@ -42,7 +42,7 @@
           :key="link.id"
           :to="link.to"
           @click="toggleMenu"
-          class="text-[#4a6b7d] hover:text-[#2c3e50] transition-all duration-300"
+          class="text-white text-2xl hover:text-[#2c3e50] transition-all duration-300"
         >
           {{ link.name }}
         </NuxtLink>

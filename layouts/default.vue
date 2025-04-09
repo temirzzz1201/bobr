@@ -7,16 +7,14 @@
       <meta name="description" :content="seo.description" />
       <meta name="keywords" :content="seo.keywords" />
 
-      <!-- Open Graph -->
       <meta property="og:title" :content="seo.title" />
       <meta property="og:description" :content="seo.description" />
       <meta property="og:type" content="website" />
       <meta property="og:url" :content="seo.url" />
       <meta property="og:image" :content="seo.image" />
-
     </Head>
 
-    <main class="container mx-auto flex-1 mb-22">
+    <main class="container px-2 md:px-8 lg:px-2 mx-auto flex-1 mb-22">
       <slot />
     </main>
 
