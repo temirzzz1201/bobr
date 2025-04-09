@@ -29,7 +29,7 @@ const seo = useSeoMeta({
   title: 'Десница Добра',
   description: 'Некоммерческая организация «Десница Добра» оказывает помощь нуждающимся: предоставляет жильё и помогает с работой в Краснодаре.',
   keywords: 'жильё, трудоустройство, помощь, Краснодар, десница добра, работа, приём людей',
-  url: `https://рабочий-дом.краснодар${route.path}`,
+  url: `https://bobr-roan.vercel.app${route.path}`,
   image: 'https://bobr-roan.vercel.app/for-social.png', 
 })
 </script>
